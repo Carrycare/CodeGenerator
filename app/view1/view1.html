@@ -1,0 +1,139 @@
+<div class="view1" ng-init="init()">
+    <ul class="layui-nav-side layui-nav layui-nav-tree" lay-filter="test">
+        <!-- 侧边导航: <ul class="layui-nav layui-nav-tree layui-nav-side"> -->
+        <li class="layui-nav-item layui-nav-itemed">
+            <a href="javascript:;">默认展开</a>
+            <dl class="layui-nav-child">
+                <dd><a href="javascript:;">选项1</a></dd>
+                <dd><a href="javascript:;">选项2</a></dd>
+                <dd><a href="">跳转</a></dd>
+            </dl>
+        </li>
+        <li class="layui-nav-item">
+            <a href="javascript:;">解决方案</a>
+            <dl class="layui-nav-child">
+                <dd><a href="">移动模块</a></dd>
+                <dd><a href="">后台模版</a></dd>
+                <dd><a href="">电商平台</a></dd>
+            </dl>
+        </li>
+        <li class="layui-nav-item x"><a href="">产品</a></li>
+        <li class="layui-nav-item"><a href="">大数据</a></li>
+    </ul>
+    <div class="contain">
+        <form class="layui-form layui-form-pane" action="">
+            <div class="layui-form-item">
+                <label class="layui-form-label">表名</label>
+                <div class="layui-input-inline">
+                    <input type="text" name="title" lay-verify="required" autocomplete="off" placeholder="请输入表名" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">类描述</label>
+                <div class="layui-input-inline" style="position: relative;">
+                    <input type="text" name="name" lay-verify="required" placeholder="请输入Java实体类名" autocomplete="off" class="layui-input">
+                    <button class="layui-btn" lay-submit="" lay-filter="demo2" style="position: absolute;left: 110%;top: 0;">定制列</button>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">主键（选填）</label>
+                <div class="layui-input-inline">
+                    <input type="text" name="key" autocomplete="off" placeholder="请输入主键" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">项目所在目录</label>
+                <div class="layui-input-inline" style="position: relative;">
+                    <input type="text" name="address" lay-verify="required" placeholder="请输入项目所在目录" autocomplete="off" class="layui-input">
+                    <button class="layui-btn" lay-submit="" lay-filter="demo2" style="position: absolute;left: 110%;top: 0;">选择</button>
+                </div>
+            </div>
+
+            <div class="layui-form-item">
+                <div class="layui-inline">
+                    <label class="layui-form-label">实体类名包名</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="classname" lay-verify="required" autocomplete="off" placeholder="请输入实体类名包名" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">存放目录</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="address" lay-verify="required" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <div class="layui-inline">
+                    <label class="layui-form-label">Mapper接口包名</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="Mappername" lay-verify="required" autocomplete="off" placeholder="请输入Mapper接口包名" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">存放目录</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="address" lay-verify="required" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <div class="layui-inline">
+                    <label class="layui-form-label">Mapper XML文件包名</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="XMLname" lay-verify="required" autocomplete="off" placeholder="请输入Mapper XML文件包名" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">存放目录</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="address" lay-verify="required" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label" style="background: none;border: none;width: 100px;">覆盖原XML</label>
+                    <div class="layui-input-block" style="margin-left: 100px;">
+                        <input type="checkbox" checked="" name="open" lay-skin="switch" lay-filter="switchTest" lay-text="Yes|&nbsp;No">
+                    </div>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <div class="checkbox">
+                    <div class="layui-inline">
+                        <label class="layui-form-label">分组选择框</label>
+                        <div class="layui-input-inline" style="margin-right: 0;width: 200px;">
+                            <select name="quiz">
+                                <option value="">请选择问题</option>
+                                <optgroup label="城市记忆">
+                                    <option value="你工作的第一个城市">你工作的第一个城市</option>
+                                </optgroup>
+                                <optgroup label="学生时代">
+                                    <option value="你的工号">你的工号</option>
+                                    <option value="你最喜欢的老师">你最喜欢的老师</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="layui-form-item" pane="">
+                <!--<div class="layui-input-block" style="margin-left: 160px;">
+                    <input type="checkbox" name="like1[write]" lay-skin="primary" title="分页">
+                    <input type="checkbox" name="like1[read]" lay-skin="primary" title="生成实体域注释（来自表注释）">
+                    <input type="checkbox" name="like1[game]" lay-skin="primary" title="生成toString/hashCode/equals方法"><br>
+                    <input type="checkbox" name="like1[write]" lay-skin="primary" title="生成JPA注解">
+                    <input type="checkbox" name="like1[read]" lay-skin="primary" title="使用实际的列名">
+                    <input type="checkbox" name="like1[game]" lay-skin="primary" title="启用as别名查询">
+                    <input type="checkbox" name="like1[write]" lay-skin="primary" title="使用Example">
+                </div>-->
+            </div>
+
+            <div class="layui-form-item">
+                <button class="layui-btn" lay-submit="" lay-filter="demo2">代码生成</button>
+                <button class="layui-btn layui-btn-primary" lay-submit="" lay-filter="demo2">保存配置</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+

@@ -1,0 +1,85 @@
+<div class="view2" ng-init="init()">
+  <div class="contain2 col-sm-6 col-sm-offset-4">
+    <form class="layui-form layui-form-pane" action="">
+      <div class="layui-form-item">
+        <label class="layui-form-label">保存名称</label>
+        <div class="layui-input-inline">
+          <input type="text" name="title" lay-verify="required" autocomplete="off" placeholder="请输入保存名称" class="layui-input">
+        </div>
+      </div>
+      <div class="layui-form-item">
+        <div class="checkbox">
+          <div class="layui-inline">
+            <label class="layui-form-label">数据库类型</label>
+            <div class="layui-input-inline" style="margin-right: 0;width: 200px;">
+              <select name="quiz">
+                <option value="">请选择问题</option>
+                <optgroup label="城市记忆">
+                  <option value="你工作的第一个城市">你工作的第一个城市</option>
+                </optgroup>
+                <optgroup label="学生时代">
+                  <option value="你的工号">你的工号</option>
+                  <option value="你最喜欢的老师">你最喜欢的老师</option>
+                </optgroup>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="layui-form-item">
+        <label class="layui-form-label">主机或IP地址名</label>
+        <div class="layui-input-inline" style="position: relative;">
+          <input type="text" name="name" lay-verify="required" placeholder="请输入主机或IP地址名" autocomplete="off" class="layui-input">
+        </div>
+      </div>
+      <div class="layui-form-item">
+        <label class="layui-form-label">端口号</label>
+        <div class="layui-input-inline" style="position: relative;">
+          <input type="text" name="name" lay-verify="required" placeholder="请输入端口号" autocomplete="off" class="layui-input">
+        </div>
+      </div>
+      <div class="layui-form-item">
+        <label class="layui-form-label">用户名</label>
+        <div class="layui-input-inline" style="position: relative;">
+          <input type="text" name="name" lay-verify="required" placeholder="请输入用户名" autocomplete="off" class="layui-input">
+        </div>
+      </div>
+      <div class="layui-form-item">
+        <label class="layui-form-label">密码</label>
+        <div class="layui-input-inline" style="position: relative;">
+          <input type="password" name="name" lay-verify="required" placeholder="请输入密码" autocomplete="off" class="layui-input">
+        </div>
+      </div>
+      <div class="layui-form-item">
+        <label class="layui-form-label">Schema/数据库</label>
+        <div class="layui-input-inline">
+          <input type="text" name="key" lay-verify="required" autocomplete="off" placeholder="请输入Schema/数据库" class="layui-input">
+        </div>
+      </div>
+      <div class="layui-form-item">
+        <div class="checkbox">
+          <div class="layui-inline">
+            <label class="layui-form-label">编码</label>
+            <div class="layui-input-inline" style="margin-right: 0;width: 200px;">
+              <select name="quiz">
+                <option value="">请选择问题</option>
+                <optgroup label="城市记忆">
+                  <option value="你工作的第一个城市">你工作的第一个城市</option>
+                </optgroup>
+                <optgroup label="学生时代">
+                  <option value="你的工号">你的工号</option>
+                  <option value="你最喜欢的老师">你最喜欢的老师</option>
+                </optgroup>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="layui-form-item">
+        <button class="layui-btn layui-btn-primary" lay-submit="" lay-filter="demo2">测试连接</button>
+        <button class="layui-btn layui-btn-primary" lay-submit="" lay-filter="demo2" style="margin-left: 210px;">取消</button>
+        <button class="layui-btn" lay-submit="" lay-filter="demo2" ng-click="toView1()">保存</button>
+      </div>
+    </form>
+  </div>
+</div>
